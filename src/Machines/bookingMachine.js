@@ -12,7 +12,7 @@ export const bookingMachine = createMachine({
     },
     search: {
       on: {
-        CONTIUNE: 'passengers',
+        CONTINUE: 'passengers',
         CANCEL: 'initial'
       }
     },
