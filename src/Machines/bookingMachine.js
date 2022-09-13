@@ -101,10 +101,11 @@ export const bookingMachine = createMachine({
 },
 {
   actions:{
-    cleanContext:assign({
-      passengers: [],
-      selectedCountry: '',
-    })
+    cleanContext: assign((context) => {
+      context.passengers = [];
+      context.selectedCountry = '';
+      return context;
+    }),
   },
   guards:{
     moreThanOnePassenger: (context) => {
