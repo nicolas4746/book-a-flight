@@ -27,3 +27,6 @@
   .Passengers-title {
     margin-bottom: 16px;
   }
+  .Passenger-disabled {
+    opacity: 0.2;
+  }

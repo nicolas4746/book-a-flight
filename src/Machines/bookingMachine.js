@@ -58,13 +58,19 @@ export const bookingMachine = createMachine({
             selectedCountry: (context,event) => event.selectedCountry
           }),
         },
-        CANCEL: 'initial'
+        CANCEL: {
+          target: 'initial',
+          actions: 'cleanContext',
+        },
       },
       ...fillCountries,
     },
     passengers: {
       on: {
-        DONE: 'tickets',
+        DONE: {
+          target:'tickets',
+          cond: 'moreThanOnePassenger'
+        },
         CANCEL: {
           target: 'initial',
           actions: 'cleanContext',
@@ -96,9 +102,14 @@ export const bookingMachine = createMachine({
 {
   actions:{
     cleanContext:assign({
-      passengers:[],
+      passengers: [],
       selectedCountry: '',
     })
+  },
+  guards:{
+    moreThanOnePassenger: (context) => {
+      return context.passengers.length > 0;
+    }
   }
 }
 );

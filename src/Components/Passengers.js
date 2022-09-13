@@ -38,7 +38,7 @@ export const Passengers = ({ state, send }) => {
           Agregar Pasajero
         </button>
         <button
-          className='Passenger-pay button'
+          className={`Passenger-pay button ${passengers.length === 0 ? 'Passenger-disabled' : ''}`} 
           type="button"
           onClick={goToTicket}
         >
