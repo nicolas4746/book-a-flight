@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/book-a-flight/static/css/main.f4098723.css",
-    "main.js": "/book-a-flight/static/js/main.5fd7a7cf.js",
+    "main.js": "/book-a-flight/static/js/main.bfa32af7.js",
     "static/js/787.38285caa.chunk.js": "/book-a-flight/static/js/787.38285caa.chunk.js",
     "static/media/background-travel-2.jpg": "/book-a-flight/static/media/background-travel-2.1b3bc05ab3ab53a29ab2.jpg",
     "index.html": "/book-a-flight/index.html",
     "main.f4098723.css.map": "/book-a-flight/static/css/main.f4098723.css.map",
-    "main.5fd7a7cf.js.map": "/book-a-flight/static/js/main.5fd7a7cf.js.map",
+    "main.bfa32af7.js.map": "/book-a-flight/static/js/main.bfa32af7.js.map",
     "787.38285caa.chunk.js.map": "/book-a-flight/static/js/787.38285caa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f4098723.css",
-    "static/js/main.5fd7a7cf.js"
+    "static/js/main.bfa32af7.js"
   ]
 }
